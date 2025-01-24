@@ -23,7 +23,14 @@ android {
         }
     }
 
+    buildFeatures{
+        buildConfig = true
+    }
+
     buildTypes {
+        debug {
+            buildConfigField("String","BASE_URL","\"https://rickandmortyapi.com/api/\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -57,6 +64,12 @@ android {
 }
 
 dependencies {
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.koin.androidx.compose)
+    implementation( libs.koin.core)
+    runtimeOnly(libs.koin.compose)
+    implementation (libs.okhttp)
+    implementation (libs.logging.interceptor)
     implementation(libs.accompanist.navigation.animation)
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.androidx.paging.compose)
@@ -76,6 +89,8 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx.v250)
+
+
     implementation(libs.coil.compose)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

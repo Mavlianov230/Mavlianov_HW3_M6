@@ -1,4 +1,4 @@
-package com.example.mavlianov_hw3_m6.ui.theme.tools.Location
+package com.example.mavlianov_hw3_m6.ui.theme.App.Location
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

@@ -1,4 +1,4 @@
-package com.example.mavlianov_hw3_m6.ui.theme.tools.App
+package com.example.mavlianov_hw3_m6.ui.theme.App.Navigation
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text

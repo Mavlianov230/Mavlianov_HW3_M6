@@ -1,4 +1,4 @@
-package com.example.mavlianov_hw3_m6.ui.theme
+package com.example.mavlianov_hw3_m6.ui.theme.Theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
